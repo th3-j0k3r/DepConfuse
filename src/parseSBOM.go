@@ -17,8 +17,7 @@ func InitMain() {
  |____/   \___| | .__/   \____|  \___/  |_| |_| |_|    \__,_| |___/  \___|
                 |_|                                                       
 				`
-
-	print(banner)
+	fmt.Println(banner)
 
 	sbomFile := flag.String(sbomFlag, "", "Path to the SBOM file")
 	purlFile := flag.String(purlFlag, "", "Path to the file containing PURLs")
