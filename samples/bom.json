@@ -115,7 +115,7 @@
     },
     {
       "type": "library",
-      "bom-ref": "pkg:npm/content-type@1.0.4",
+      "bom-ref": "pkg:npm/internal-package@1.0.4",
       "name": "content-type",
       "version": "1.0.4",
       "description": "Create and parse HTTP Content-Type header",
@@ -132,7 +132,7 @@
           }
         }
       ],
-      "purl": "pkg:npm/content-type@1.0.4",
+      "purl": "pkg:npm/internal-package@1.0.4",
       "externalReferences": [
         {
           "type": "website",
