@@ -11,9 +11,11 @@
 
 ## ✨ Key Features
 
-* **SBOM Analysis:** Scan a CycloneDX JSON SBOM to extract all declared dependencies.
-* **PURL Analysis:** Directly analyze a list of Package URLs (PURLs) from a text file.
-* **Multi-Registry Support:** Supports 20+ package registries.
+* **SBOM-First Approach:** Built on CycloneDX SBOMs, DepConfuse detects dependency confusion risks across ecosystems, offering broader and more precise coverage than tools limited to individual package managers.
+* **Multi-Registry Support:** Supports 20+ package registries. It covers npm, PyPI, Maven, NuGet, Docker Hub, Go modules, Ruby gems and more.
+* **PURL Analysis:** Directly analyzes a list of Package URLs (PURLs) from a text file.
+* **Flexible Input Modes:** Accepts both CycloneDX SBOMs (--sbom) and plain PURL lists (--file).
+* **Ecosystems.ms Integration:** Provides real-time, namespace-aware checks across multiple ecosystems via a unified API.
 
 ## 📦 Installation
 
@@ -30,7 +32,7 @@
     go build -o depconfuse
     ```
 
-## Usage
+## 🔧 Usage
 
 DepConfuse can be used in two modes:
 
@@ -40,14 +42,12 @@ DepConfuse can be used in two modes:
 ### 2. PURL File Analysis Mode
 `./depconfuse --file /path/to/purls.txt --output results.txt`
 
-![](/assets/depconfuse.png)
+![](/demo/demo.gif)
 
-
-
-## Credits
+## 🤝 Credits
 This project uses the following open-source projects:
 
 - [CycloneDX](https://cyclonedx.org/)
 - [Package URL (PURL)](https://github.com/package-url/purl-spec) 
 - [Echosyste.ms](https://ecosyste.ms/)
-- [Alex birsan dependency confusion research](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610)
+- [Alex Birsan dependency confusion research](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610)
